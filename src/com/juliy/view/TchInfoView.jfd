@@ -1,0 +1,143 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:160:p, comp btn_cancel:::p::p, space :p:59:p, comp btn_sure:::p::p}, seq l {space :p:28:p, par l {seq l {comp label1:::p:85:p, space :6:6:p, comp field_number:::p:150:p, space :18:18:p, comp label2:::p:85:p, space :6:6:p, comp field_name:::p:150:p}, seq l {comp label3:::p:85:p, space :6:6:p, comp field_age:::p:150:p, space :18:18:p, comp label4:::p:85:p, space :6:6:p, comp field_sex:::p:150:p}, par t:l::p {seq t {comp label5:::p:85:p, space :6:6:p, comp field_college:::p:150:p, space :::x, comp label16:::p:85:p, space :::p, comp field_profession:::p:150:p}, seq t {par t {seq t {comp label7:::p:85:p, space :6:6:p, comp field_job:::p:150:p}, seq l {comp label11:::p:85:p, space :6:6:p, comp field_hometown:::p:150:p}}, space s:::p, par l {seq l {comp label10:::p:85:p, space :6:6:p, comp field_politicalStatus:::p:150:p}, seq l {comp label12:::p:85:p, space :6:6:p, comp field_nationality:::p:150:p}}}}, seq l {comp label13:::p:85:p, space :6:6:p, comp field_id:::p:150:p, space :18:18:p, comp label15:::p:85:p, space :6:6:p, comp field_phone:::p:150:p}, seq l {comp label14:::p:85:p, space :::p, comp field_address:::p:409:p}}}}, space ::58:x}}"
+			"$verticalGroup": "par l {seq t {space :p:29:p, par l {comp label1:::p:25:p, comp field_number:::p:25:p, comp label2:::p:25:p, comp field_name:::p:25:p}, space :12:12:p, par l {comp label3:::p:25:p, comp field_age:::p:25:p, comp label4:::p:25:p, comp field_sex:::p:25:p}, space :12:12:p, par l {comp field_college:::p:25:p, seq l {space :1:1:p, comp label5:::p::p}, par b:l {comp field_profession::b:p:25:p, comp label16::b:p:25:p}}, space :12:12:p, par l {comp label10:::p:25:p, comp field_politicalStatus:::p:25:p, comp label7::l:p:25:p, comp field_job::l:p:25:p}, space :p:12:p, par l {comp label11:::p:25:p, comp field_hometown:::p:25:p, comp label12:::p:25:p, comp field_nationality:::p:25:p}, space u:::p, par l {comp label13:::p:25:p, comp field_id:::p:25:p, comp label15:::p:25:p, comp field_phone:::p:25:p}, space u:::p, par b {comp label14::b:p:25:p, comp field_address::b:p:25:p}, space s:::p, par b {comp btn_sure::b:p::p, comp btn_cancel::b:p::p}, space ::21:x}}"
+		} ) {
+			name: "this"
+			"title": "教师信息"
+			"defaultCloseOperation": 2
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "工号"
+				"horizontalAlignment": 0
+				"font": &Font0 new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "年龄"
+				"horizontalAlignment": 0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "学院"
+				"horizontalAlignment": 0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "职称"
+				"horizontalAlignment": 0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label11"
+				"text": "祖籍"
+				"horizontalAlignment": 0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label13"
+				"text": "身份证号"
+				"horizontalAlignment": 0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label14"
+				"text": "现居地址"
+				"horizontalAlignment": 0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "field_address"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "field_id"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "field_hometown"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "field_job"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "field_college"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "field_age"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "field_number"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "姓名"
+				"horizontalAlignment": 0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "field_name"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "field_sex"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "性别"
+				"horizontalAlignment": 0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "field_profession"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label10"
+				"text": "政治面貌"
+				"horizontalAlignment": 0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "field_politicalStatus"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "field_nationality"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label12"
+				"text": "民族"
+				"horizontalAlignment": 0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label15"
+				"text": "电话号码"
+				"horizontalAlignment": 0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "field_phone"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_cancel"
+				"text": "取消"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_sure"
+				"text": "确定"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label16"
+				"text": "专业"
+				"horizontalAlignment": 0
+				"font": #Font0
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 590, 395 )
+		} )
+	}
+}

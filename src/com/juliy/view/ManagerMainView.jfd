@@ -1,0 +1,491 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :0:0:x, comp panel1:::p:896:p}}"
+			"$verticalGroup": "par l {seq t {space :0:0:x, comp panel1:::p:558:p}}"
+		} ) {
+			name: "this"
+			"title": "管理员界面"
+			"defaultCloseOperation": 3
+			"$sizePolicy": 1
+			"minimumSize": new java.awt.Dimension( 900, 600 )
+			"resizable": false
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+				"$rowSpecs": "91:1.0, 25:1.0, 440:1.0"
+				"$alignLeft": true
+				"$alignTop": true
+				"$columnSpecs": "900:1.0"
+			} ) {
+				name: "panel1"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:251:p, comp label_title:::p:392:p, space ::254:x}}"
+					"$verticalGroup": "par l {seq t {comp label_title::::80:x, space :::p}}"
+				} ) {
+					name: "panel_title"
+					"background": new java.awt.Color( 216, 216, 216, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_title"
+						"text": "学生信息管理系统"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 1, 48 )
+						"foreground": new java.awt.Color( 0, 0, 0, 255 )
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {comp label_welcome:::p:499:p, space :p:98:p, comp label_time:::p:197:p, space :::p, comp btn_logout:::p:80:p, space ::17:x}}"
+					"$verticalGroup": "par t {seq t {par b {comp btn_logout::b:p:24:p, comp label_welcome::b:p:25:p, comp label_time::b:p:25:p}, space :::p}}"
+				} ) {
+					name: "panel3"
+					"preferredSize": new java.awt.Dimension( 896, 25 )
+					"background": new java.awt.Color( 204, 204, 204, 255 )
+					"minimumSize": new java.awt.Dimension( 824, 25 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_welcome"
+						"text": "系统管理员，您好，欢迎使用本系统"
+						"preferredSize": new java.awt.Dimension( 271, 25 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_time"
+						"text": "当前时间：yyyy-MM-dd-EEEE"
+						"preferredSize": new java.awt.Dimension( 255, 25 )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_logout"
+						"background": new java.awt.Color( 204, 204, 204, 255 )
+						"text": "注销"
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 1
+				} )
+				add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+					name: "tabbedPane_main"
+					"font": new java.awt.Font( "黑体", 1, 16 )
+					"foreground": new java.awt.Color( 0, 51, 153, 255 )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+						"$columnSpecs": "5, 30, 100, 5, 30, 0, 5, 30, 0, 5, 0, 0, 5, 60, 90, 15, 70, 15, 80, 0:1.0"
+						"$rowSpecs": "5, 25, 5, 347:1.0, 5, 25, 5"
+						"$alignLeft": true
+						"$alignTop": true
+					} ) {
+						name: "panel_stuManagePage"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label2"
+							"text": "学号"
+							"preferredSize": &Dimension0 new java.awt.Dimension( 30, 25 )
+							"horizontalAlignment": 0
+							"maximumSize": &Dimension1 new java.awt.Dimension( 30, 25 )
+							"minimumSize": &Dimension2 new java.awt.Dimension( 30, 25 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 1
+							"gridx": 1
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "field_stuNumber"
+							"minimumSize": &Dimension3 new java.awt.Dimension( 110, 25 )
+							"preferredSize": &Dimension4 new java.awt.Dimension( 110, 25 )
+							"maximumSize": &Dimension5 new java.awt.Dimension( 110, 25 )
+							"toolTipText": "支持模糊搜索"
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 2
+							"gridy": 1
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label3"
+							"text": "姓名"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 0
+							"minimumSize": &Dimension6 new java.awt.Dimension( 30, 25 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 1
+							"gridx": 4
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "field_stuName"
+							"minimumSize": &Dimension7 new java.awt.Dimension( 70, 25 )
+							"preferredSize": &Dimension8 new java.awt.Dimension( 70, 25 )
+							"toolTipText": "支持模糊搜索"
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 1
+							"gridx": 5
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label4"
+							"text": "学院"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 0
+							"minimumSize": &Dimension9 new java.awt.Dimension( 30, 25 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 1
+							"gridx": 7
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "cbBox_stuCollege"
+							"preferredSize": &Dimension10 new java.awt.Dimension( 110, 25 )
+							"minimumSize": &Dimension11 new java.awt.Dimension( 110, 25 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 8
+							"gridy": 1
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label5"
+							"text": "专业"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 0
+							"minimumSize": &Dimension12 new java.awt.Dimension( 30, 25 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 1
+							"gridx": 10
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "cbBox_stuMajor"
+							"preferredSize": &Dimension13 new java.awt.Dimension( 110, 25 )
+							"minimumSize": &Dimension14 new java.awt.Dimension( 110, 25 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 11
+							"gridy": 1
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label6"
+							"text": "政治面貌"
+							"preferredSize": &Dimension15 new java.awt.Dimension( 60, 25 )
+							"horizontalAlignment": 0
+							"minimumSize": &Dimension16 new java.awt.Dimension( 60, 25 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 1
+							"gridx": 13
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "cbBox_stuStatus"
+							"preferredSize": &Dimension17 new java.awt.Dimension( 90, 25 )
+							"minimumSize": &Dimension18 new java.awt.Dimension( 90, 25 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 14
+							"gridy": 1
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btn_stuSearch"
+							"text": "搜索"
+							"preferredSize": &Dimension19 new java.awt.Dimension( 70, 25 )
+							"minimumSize": &Dimension20 new java.awt.Dimension( 70, 25 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 16
+							"gridy": 1
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btn_stuShowAll"
+							"text": "显示所有"
+							"preferredSize": &Dimension21 new java.awt.Dimension( 80, 25 )
+							"minimumSize": &Dimension22 new java.awt.Dimension( 80, 25 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 1
+							"gridx": 18
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane1"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "table_stuInfo"
+							} )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 3
+							"gridwidth": 20
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btn_stuAdd"
+							"text": "添加新学生"
+							"preferredSize": #Dimension19
+							"minimumSize": #Dimension20
+							"maximumSize": &Dimension23 new java.awt.Dimension( 70, 25 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 1
+							"gridy": 5
+							"gridwidth": 2
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "学生管理"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+						"$columnSpecs": "5, 30, 100, 5, 30, 0, 5, 30, 0, 5, 0, 0, 5, 60, 90, 15, 70, 15, 80, 0:1.0"
+						"$rowSpecs": "5, 25, 5, 347:1.0, 5, 25, 5"
+						"$alignLeft": true
+						"$alignTop": true
+					} ) {
+						name: "panel_tchManagePage"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label7"
+							"text": "工号"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 0
+							"maximumSize": #Dimension1
+							"minimumSize": #Dimension2
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 1
+							"gridx": 1
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "field_tchNumber"
+							"minimumSize": #Dimension3
+							"preferredSize": #Dimension4
+							"maximumSize": #Dimension5
+							"toolTipText": "支持模糊搜索"
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 2
+							"gridy": 1
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label12"
+							"text": "姓名"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 0
+							"minimumSize": #Dimension6
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 1
+							"gridx": 4
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "field_tchName"
+							"minimumSize": #Dimension7
+							"preferredSize": #Dimension8
+							"toolTipText": "支持模糊搜索"
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 1
+							"gridx": 5
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label13"
+							"text": "学院"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 0
+							"minimumSize": #Dimension9
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 1
+							"gridx": 7
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "cbBox_tchCollege"
+							"preferredSize": #Dimension10
+							"minimumSize": #Dimension11
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 8
+							"gridy": 1
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label16"
+							"text": "职称"
+							"preferredSize": #Dimension0
+							"horizontalAlignment": 0
+							"minimumSize": #Dimension12
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 1
+							"gridx": 10
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "cbBox_tchJob"
+							"preferredSize": #Dimension13
+							"minimumSize": #Dimension14
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 11
+							"gridy": 1
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label17"
+							"text": "政治面貌"
+							"preferredSize": #Dimension15
+							"horizontalAlignment": 0
+							"minimumSize": #Dimension16
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 1
+							"gridx": 13
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "cbBox_tchStatus"
+							"preferredSize": #Dimension17
+							"minimumSize": #Dimension18
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 14
+							"gridy": 1
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btn_tchSearch"
+							"text": "搜索"
+							"preferredSize": #Dimension19
+							"minimumSize": #Dimension20
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 16
+							"gridy": 1
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btn_tchShowAll"
+							"text": "显示所有"
+							"preferredSize": #Dimension21
+							"minimumSize": #Dimension22
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 1
+							"gridx": 18
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane2"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "table_tchInfo"
+							} )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 3
+							"gridwidth": 20
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btn_tchAdd"
+							"text": "添加新教师"
+							"preferredSize": #Dimension19
+							"minimumSize": #Dimension20
+							"maximumSize": #Dimension23
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 1
+							"gridy": 5
+							"gridwidth": 2
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "教师管理"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+						"$columnSpecs": "5, 60, 100, 5, 60, 0, 15, 70, 15, 80, 0:1.0"
+						"$rowSpecs": "5, 25, 5, 347:1.0, 5, 25, 5"
+						"$alignLeft": true
+						"$alignTop": true
+					} ) {
+						name: "panel_courseManagePage"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label21"
+							"text": "开课院系"
+							"preferredSize": new java.awt.Dimension( 60, 25 )
+							"horizontalAlignment": 0
+							"minimumSize": new java.awt.Dimension( 60, 25 )
+							"maximumSize": new java.awt.Dimension( 60, 25 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 1
+							"gridx": 1
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "cbBox_courseCollege"
+							"preferredSize": #Dimension13
+							"minimumSize": #Dimension14
+							"maximumSize": new java.awt.Dimension( 110, 25 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 2
+							"gridy": 1
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label22"
+							"text": "课程类型"
+							"preferredSize": #Dimension15
+							"horizontalAlignment": 0
+							"minimumSize": #Dimension16
+							"maximumSize": new java.awt.Dimension( 60, 25 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 1
+							"gridx": 4
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "cbBox_courseType"
+							"preferredSize": #Dimension17
+							"minimumSize": #Dimension18
+							"maximumSize": new java.awt.Dimension( 90, 25 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 5
+							"gridy": 1
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btn_courseSearch"
+							"text": "搜索"
+							"preferredSize": #Dimension19
+							"minimumSize": #Dimension20
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 7
+							"gridy": 1
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btn_courseShowAll"
+							"text": "显示所有"
+							"preferredSize": #Dimension21
+							"minimumSize": #Dimension22
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 1
+							"gridx": 9
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane3"
+							add( new FormComponent( "javax.swing.JTable" ) {
+								name: "table_courseInfo"
+							} )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 3
+							"gridwidth": 11
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btn_courseAdd"
+							"text": "添加新课程"
+							"preferredSize": #Dimension19
+							"minimumSize": #Dimension20
+							"maximumSize": #Dimension23
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 1
+							"gridy": 5
+							"gridwidth": 2
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "课程管理"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {par l {seq {space :::p, comp label1:::p::p}, seq l {space :p:49:p, comp label8:::p::p, space :::p, comp label10:::p::p}, seq {space :p:49:p, comp label9:::p::p, space :::p, comp label11:::p::p}, seq l {space :p:103:p, par t {comp label15:::p::p, comp label14:::p::p}}}, space :::x}}"
+						"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, space s:::p, par b {comp label8::b:p::p, comp label10::b:p::p}, space s:::p, par b {comp label9::b:p::p, comp label11::b:p::p}, space s:::p, comp label14:::p::p, space s:::p, comp label15:::p::p, space :::x}}"
+					} ) {
+						name: "panel_systemInfoPage"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label1"
+							"text": "本系统由 南京信息工程大学 计算机与软件学院 软件工程专业 20级 Java课程 第11组开发"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 1, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label8"
+							"text": "组长："
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label9"
+							"text": "组员："
+							"font": &Font0 new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label10"
+							"text": "唐思哲  202083290247"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label11"
+							"text": "鞠立阳  202083290549"
+							"font": #Font0
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label14"
+							"text": "周宣宏  202083290423"
+							"font": #Font0
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label15"
+							"text": "李晨    202083290232"
+							"font": #Font0
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "系统相关"
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 2
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 900, 600 )
+		} )
+	}
+}

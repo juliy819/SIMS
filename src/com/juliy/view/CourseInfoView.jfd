@@ -1,0 +1,101 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:39:p, par l {seq {comp label1:::p:85:p, space :6:6:p, comp field_number:::p:150:p, space :18:18:p, comp label2:::p:85:p, space :6:6:p, comp field_name:::p:150:p}, seq {comp label3:::p:85:p, space :6:6:p, comp field_teacher:::p:150:p, space :18:18:p, comp label4:::p:85:p, space :6:6:p, comp field_college:::p:150:p}, seq {comp label5:::p:85:p, space :6:6:p, comp field_profession:::p:150:p, space :18:18:p, comp label16:::p:85:p, space :6:6:p, comp field_type:::p:150:p}, seq l {comp label7:::p:85:p, space :6:6:p, comp field_credit:::p:150:p, space :p:18:p, comp label10:::p:85:p, space :6:6:p, comp field_period:::p:150:p}}}, seq l {space :p:201:p, comp btn_cancel:::p::p, space s:::p, comp btn_sure:::p::p}}, space ::52:x}}"
+			"$verticalGroup": "par l {seq l {space :p:38:p, par l {comp label1:::p:25:p, comp field_number:::p:25:p, comp label2:::p:25:p, comp field_name:::p:25:p}, space :12:12:p, par l {comp label3:::p:25:p, comp field_teacher:::p:25:p, comp label4:::p:25:p, comp field_college:::p:25:p}, space :12:12:p, par l {seq {space :1:1:p, comp label5:::p::p}, comp field_profession:::p:25:p, comp label16:::p:25:p, comp field_type:::p:25:p}, space :12:12:p, par l {comp label7:::p:25:p, comp field_credit:::p:25:p, comp label10:::p:25:p, comp field_period:::p:25:p}, space ::27:x, par b {comp btn_sure::b:p::p, comp btn_cancel::b:p::p}, space :p:19:p}}"
+		} ) {
+			name: "this"
+			"title": "课程信息"
+			"defaultCloseOperation": 2
+			"resizable": false
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "课程编号"
+				"horizontalAlignment": 0
+				"font": &Font0 new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "课程名称"
+				"horizontalAlignment": 0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "任课教师"
+				"horizontalAlignment": 0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "开课院系"
+				"horizontalAlignment": 0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "开课专业"
+				"horizontalAlignment": 0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label16"
+				"text": "课程性质"
+				"horizontalAlignment": 0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "学分"
+				"horizontalAlignment": 0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label10"
+				"text": "学时"
+				"horizontalAlignment": 0
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "field_number"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "field_teacher"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "field_profession"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "field_credit"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "field_period"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "field_type"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "field_college"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "field_name"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_sure"
+				"text": "确定"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btn_cancel"
+				"text": "取消"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 595, 300 )
+		} )
+	}
+}

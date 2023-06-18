@@ -1,0 +1,646 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {comp panel1:::p:896:p, space :0:0:x}}"
+			"$verticalGroup": "par l {comp panel1::l::558:x}"
+		} ) {
+			name: "this"
+			"title": "学生端"
+			"defaultCloseOperation": 2
+			"minimumSize": new java.awt.Dimension( 900, 600 )
+			"$sizePolicy": 1
+			"resizable": false
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+				"$columnSpecs": "900:1.0"
+				"$rowSpecs": "91:1.0, 25:1.0, 440:1.0"
+				"$alignLeft": true
+				"$alignTop": true
+			} ) {
+				name: "panel1"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:237:p, comp label_title:::p:392:p, space ::268:x}}"
+					"$verticalGroup": "par l {seq t {comp label_title::::85:x, space :::p}}"
+				} ) {
+					name: "panel_title"
+					"background": new java.awt.Color( 216, 216, 216, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_title"
+						"text": "学生信息管理系统"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 1, 48 )
+						"foreground": new java.awt.Color( 0, 0, 0, 255 )
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {comp label_welcome:::p:499:p, space :::p, comp label_time:::p:197:p, space :::p, comp btn_changePassword:::p:80:p, space u:::p, comp btn_logout:::p:80:p, space ::17:x}}"
+					"$verticalGroup": "par t {seq t {par b {comp btn_logout::b:p:24:p, comp btn_changePassword::b:p:24:p, comp label_time::b:p:25:p, comp label_welcome::b:p:25:p}, space :::p}}"
+				} ) {
+					name: "panel3"
+					"preferredSize": new java.awt.Dimension( 896, 25 )
+					"background": new java.awt.Color( 204, 204, 204, 255 )
+					"minimumSize": new java.awt.Dimension( 824, 25 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_welcome"
+						"text": "专业 班级 姓名 同学，您好，欢迎使用本系统"
+						"preferredSize": new java.awt.Dimension( 271, 25 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label_time"
+						"text": "当前时间：yyyy-MM-dd-EEEE"
+						"preferredSize": new java.awt.Dimension( 255, 25 )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_logout"
+						"background": &Color0 new java.awt.Color( 204, 204, 204, 255 )
+						"text": "注销"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "btn_changePassword"
+						"background": #Color0
+						"text": "修改密码"
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 1
+				} )
+				add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+					name: "tabbedPane_main"
+					"font": new java.awt.Font( "黑体", 1, 16 )
+					"foreground": new java.awt.Color( 0, 51, 153, 255 )
+					add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+						name: "tabbedPane_course"
+						"tabPlacement": 2
+						"font": new java.awt.Font( "微软雅黑", 0, 14 )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+							"$columnSpecs": "40, 130, 40, 115, 0, 100, 0, 151, 0, 180:1.0"
+							"$rowSpecs": "30, 360:1.0"
+							"$vGap": 2
+							"$alignTop": true
+							"$alignLeft": true
+						} ) {
+							name: "panel_courseInfoPage"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label30"
+								"text": "学年"
+								"horizontalAlignment": 0
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "course_comboBox_schoolYear"
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 1
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label31"
+								"text": "学期"
+								"horizontalAlignment": 0
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 2
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "course_comboBox_term"
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 3
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label32"
+								"text": "   "
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 4
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "btn_queryCourse"
+								"text": "查询"
+								"font": &Font0 new java.awt.Font( "Microsoft YaHei UI", 1, 14 )
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 5
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label33"
+								"text": "   "
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 6
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "btn_queryAllCourse"
+								"text": "查询所有选课信息"
+								"font": new java.awt.Font( "Microsoft YaHei UI", 1, 14 )
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 7
+							} )
+							add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+								name: "scrollPane3"
+								add( new FormComponent( "javax.swing.JTable" ) {
+									name: "table_courseInfo"
+								} )
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridy": 1
+								"gridwidth": 10
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "选课信息"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+							"$columnSpecs": "67, 126, 0, 0, 524"
+							"$rowSpecs": "30, 360:1.0"
+							"$vGap": 2
+							"$alignTop": true
+							"$alignLeft": true
+						} ) {
+							name: "panel_courseSelect"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label35"
+								"text": "课程性质"
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "course_comboBox_type"
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 1
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label36"
+								"text": "    "
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 2
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "btn_courseFilter"
+								"text": "筛选"
+								"horizontalTextPosition": 0
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 3
+							} )
+							add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+								name: "scrollPane4"
+								add( new FormComponent( "javax.swing.JTable" ) {
+									name: "table_courseSelect"
+								} )
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridy": 1
+								"gridwidth": 5
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "课程选修"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+							"$columnSpecs": "0:1.0"
+							"$rowSpecs": "0:1.0"
+							"$hGap": 5
+							"$vGap": 5
+							"$alignTop": true
+							"$alignLeft": true
+						} ) {
+							name: "panel_courseDrop"
+							add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+								name: "scrollPane5"
+								add( new FormComponent( "javax.swing.JTable" ) {
+									name: "table_courseDrop"
+								} )
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+						}, new FormLayoutConstraints( null ) {
+							"title": "课程退选"
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "选课管理"
+					} )
+					add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+						name: "tabbedPane_grade"
+						"tabPlacement": 2
+						"font": new java.awt.Font( "微软雅黑", 0, 14 )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+							"$columnSpecs": "40:1.0, 130:1.0, 40:1.0, 115:1.0, 70:1.0, 130:1.0, 0, 99, 0, 123:1.0, 0:1.0"
+							"$rowSpecs": "30, 360"
+							"$vGap": 2
+							"$alignTop": true
+							"$alignLeft": true
+						} ) {
+							name: "panel_commonScorePage"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label16"
+								"text": "学年"
+								"horizontalAlignment": 0
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "score_comboBox_schoolYear"
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 1
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label17"
+								"text": "学期"
+								"horizontalAlignment": 0
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 2
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "score_comboBox_term"
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 3
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label18"
+								"text": "课程性质"
+								"horizontalAlignment": 0
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 4
+							} )
+							add( new FormComponent( "javax.swing.JComboBox" ) {
+								name: "score_comboBox_type"
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 5
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label19"
+								"text": "   "
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 6
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "btn_queryScore"
+								"text": "成绩查询"
+								"font": #Font0
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 7
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label28"
+								"text": "   "
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 8
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "btn_queryAllScore"
+								"text": "查询所有成绩"
+								"font": #Font0
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 9
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label34"
+								"text": "    "
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 10
+							} )
+							add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+								name: "scrollPane1"
+								add( new FormComponent( "javax.swing.JTable" ) {
+									name: "table_score"
+								} )
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridy": 1
+								"gridwidth": 11
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "普通课程成绩"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+							"$columnSpecs": "83, 55, 40:1.0"
+							"$rowSpecs": "30, 360:1.0"
+							"$vGap": 2
+							"$alignTop": true
+							"$alignLeft": true
+						} ) {
+							name: "panel_creditPage"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label29"
+								"text": "已获学分："
+								"horizontalAlignment": 0
+								"horizontalTextPosition": 0
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label_credit"
+								"text": "credit"
+								"horizontalAlignment": 0
+								"horizontalTextPosition": 0
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridx": 1
+							} )
+							add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+								name: "scrollPane2"
+								add( new FormComponent( "javax.swing.JTable" ) {
+									name: "table_credit"
+								} )
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+								"gridy": 1
+								"gridwidth": 3
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "学业完成情况"
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "成绩查询"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq l {comp panel_studentInfo:::p::p, space :0:1:x}}"
+						"$verticalGroup": "par l {seq t {space :::p, comp panel_studentInfo:::::x}}"
+					} ) {
+						name: "panel_studentInfoPage"
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+							"$horizontalGroup": "par l {seq l {space :p:12:p, comp panel_stuInfoLeft:6::p::p, space :::p, comp panel_stuInfoRight:6::p::p, space ::16:x}}"
+							"$verticalGroup": "par l {seq {space ::17:x, par l {comp panel_stuInfoLeft:5::p::p, comp panel_stuInfoRight:5::p::p}, space ::30:x}}"
+						} ) {
+							name: "panel_studentInfo"
+							"border": new javax.swing.border.TitledBorder( null, "基本信息", 4, 0, new java.awt.Font( "宋体", 1, 18 ), sfield java.awt.Color black )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+								"$horizontalGroup": "par l {seq {space :::p, par l:::p {seq l {comp label6:1:::70:x, space :::x, comp label_nationality:::p:186:p}, seq l {comp label5:1:::70:x, space :::x, comp label_age:::p:186:p}, seq l {comp label4:1:::70:x, space :::x, comp label_sex:::p:186:p}, seq l {par l {comp label2:1:l:p:70:p, comp label3:1:l::70:x}, space :p:54:p, par l {comp label_name:::::x, seq l {space :0:0:x, comp label_number:::p:186:p}}}, seq t {par l {comp label7:1:l::70:x, comp label12:1:l::70:x, comp label13:1:l:p:70:p}, space :::x, par l:::p {comp label_id::t:::x, comp cardPanel_address::t:::x, comp cardPanel_phone::l::186:x}}}, space :::p, par l {comp btn_editAddress:3:::70:x, comp btn_editPhone:3:::70:x}, space ::34:x}}"
+								"$verticalGroup": "par l {seq {space :::p, par b {comp label2:2:b:p::p, comp label_name::b:p::p}, space s:::p, par b {comp label3:2:b:p::p, comp label_number::b:p::p}, space :p:16:p, par b {comp label4:2:b:p::p, comp label_sex::b:p::p}, space s:::p, par b {comp label5:2:b:p::p, comp label_age::b:p::p}, space s:::p, par b {comp label6:2:b:p::p, comp label_nationality::b:p::p}, space s:::p, par b {comp label_id::b:p::p, comp label7:2:b:p::p}, space s:::p, par l {seq {par l {comp btn_editAddress:::p:25:p, comp cardPanel_address:::p::p}, space u:::p, par l {comp cardPanel_phone:::p:25:p, comp btn_editPhone:::p:25:p}}, seq {comp label12:2::::x, space s:::p, comp label13:2::p::p}}, space ::12:x}}"
+							} ) {
+								name: "panel_stuInfoLeft"
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label2"
+									"text": "姓名"
+									"font": &Font1 new java.awt.Font( "微软雅黑", 2, 16 )
+									"horizontalAlignment": 0
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label3"
+									"text": "学号"
+									"font": #Font1
+									"horizontalAlignment": 0
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label4"
+									"text": "性别"
+									"font": #Font1
+									"horizontalAlignment": 0
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label5"
+									"text": "年龄"
+									"font": #Font1
+									"horizontalAlignment": 0
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label6"
+									"text": "民族"
+									"font": #Font1
+									"horizontalAlignment": 0
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label7"
+									"text": "身份证"
+									"font": #Font1
+									"horizontalAlignment": 0
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label_name"
+									"text": "name"
+									"font": &Font2 new java.awt.Font( "微软雅黑", 0, 16 )
+									"horizontalAlignment": 2
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label_number"
+									"text": "number"
+									"font": #Font2
+									"horizontalAlignment": 2
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label_sex"
+									"text": "sex"
+									"font": #Font2
+									"horizontalAlignment": 2
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label_age"
+									"text": "age"
+									"font": #Font2
+									"horizontalAlignment": 2
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label_nationality"
+									"text": "nationality"
+									"font": #Font2
+									"horizontalAlignment": 2
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label_id"
+									"text": "id"
+									"font": #Font2
+									"horizontalAlignment": 2
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.CardLayout ) ) {
+									name: "cardPanel_address"
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label_address"
+										"text": "address"
+										"font": #Font2
+										"horizontalAlignment": 2
+										"preferredSize": &Dimension0 new java.awt.Dimension( 59, 25 )
+										"minimumSize": &Dimension1 new java.awt.Dimension( 59, 25 )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "card1"
+									} )
+									add( new FormComponent( "javax.swing.JTextField" ) {
+										name: "field_address"
+										"preferredSize": new java.awt.Dimension( 7, 25 )
+										"minimumSize": new java.awt.Dimension( 7, 25 )
+										"font": new java.awt.Font( "微软雅黑 Light", 0, 16 )
+										"toolTipText": "不能超过50个字"
+										"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "card2"
+									} )
+								} )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "btn_editAddress"
+									"text": "编辑"
+									"toolTipText": "修改家庭住址"
+								} )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "btn_editPhone"
+									"text": "编辑"
+									"toolTipText": "修改电话号码"
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label12"
+									"text": "家庭住址"
+									"font": #Font1
+									"horizontalAlignment": 0
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label13"
+									"text": "电话号码"
+									"font": #Font1
+									"horizontalAlignment": 0
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.CardLayout ) ) {
+									name: "cardPanel_phone"
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label_phone"
+										"text": "phone"
+										"font": #Font2
+										"horizontalAlignment": 2
+										"preferredSize": #Dimension0
+										"minimumSize": #Dimension1
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "card1"
+									} )
+									add( new FormComponent( "javax.swing.JTextField" ) {
+										name: "field_phone"
+										"font": new java.awt.Font( "微软雅黑 Light", 0, 16 )
+										"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "card2"
+									} )
+								} )
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+								"$horizontalGroup": "par l {seq {space :::p, par l:::p {seq {comp label27:::p:85:p, space :::x, comp label_isSports:::p:186:p}, seq l {comp label26:::p:85:p, space :::x, comp label_class:::p:186:p}, seq l {comp label25:::p:85:p, space :::x, comp label_major:::p:186:p}, seq l {comp label24:::p:85:p, space :::x, comp label_preMajor:::p:186:p}, seq l {comp label23:::p:85:p, space :::x, comp label_college:::p:186:p}, seq l {comp label22:::p:85:p, space :::x, comp label_startTime:::p:186:p}, seq t {comp label21:::p:85:p, space :::x, comp label_politicalStatus:::p:186:p}, seq t {comp label20:::p:85:p, space :p:55:p, comp label_hometown:::p:186:p}}, space ::94:x}}"
+								"$verticalGroup": "par l {seq {space :::p, par b {comp label20::b:p::p, comp label_hometown::b:p::p}, space s:::p, par b {comp label21::b:p::p, comp label_politicalStatus::b:p::p}, space s:::p, par b {comp label22::b:p::p, comp label_startTime::b:p::p}, space s:::p, par b {comp label23::b:p::p, comp label_college::b:p::p}, space s:::p, par b {comp label24::b:p::p, comp label_preMajor::b:p::p}, space s:::p, par b {comp label25::b:p::p, comp label_major::b:p::p}, space s:::p, par b {comp label26::b:p::p, comp label_class::b:p::p}, space s:::p, par b {comp label27::b:p::p, comp label_isSports::b:p::p}, space ::10:x}}"
+							} ) {
+								name: "panel_stuInfoRight"
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label20"
+									"text": "籍贯"
+									"font": #Font1
+									"horizontalAlignment": 0
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label_hometown"
+									"text": "hometown"
+									"font": #Font2
+									"horizontalAlignment": 2
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label21"
+									"text": "政治面貌"
+									"font": #Font1
+									"horizontalAlignment": 0
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label22"
+									"text": "入学年份"
+									"font": #Font1
+									"horizontalAlignment": 0
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label23"
+									"text": "学院"
+									"font": #Font1
+									"horizontalAlignment": 0
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label24"
+									"text": "分流前专业"
+									"font": #Font1
+									"horizontalAlignment": 0
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label25"
+									"text": "专业"
+									"font": #Font1
+									"horizontalAlignment": 0
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label26"
+									"text": "班级"
+									"font": #Font1
+									"horizontalAlignment": 0
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label27"
+									"text": "是否体育生"
+									"font": #Font1
+									"horizontalAlignment": 0
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label_politicalStatus"
+									"text": "politicalStatus"
+									"font": #Font2
+									"horizontalAlignment": 2
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label_startTime"
+									"text": "startTime"
+									"font": #Font2
+									"horizontalAlignment": 2
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label_college"
+									"text": "college"
+									"font": #Font2
+									"horizontalAlignment": 2
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label_preMajor"
+									"text": "preMajor"
+									"font": #Font2
+									"horizontalAlignment": 2
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label_major"
+									"text": "major"
+									"font": #Font2
+									"horizontalAlignment": 2
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label_class"
+									"text": "class"
+									"font": #Font2
+									"horizontalAlignment": 2
+								} )
+								add( new FormComponent( "javax.swing.JLabel" ) {
+									name: "label_isSports"
+									"text": "isSports"
+									"font": #Font2
+									"horizontalAlignment": 2
+								} )
+							} )
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "个人信息"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {par l {seq {space :::p, comp label1:::p::p}, seq l {space :p:49:p, comp label8:::p::p, space :::p, comp label10:::p::p}, seq {space :p:49:p, comp label9:::p::p, space :::p, comp label11:::p::p}, seq l {space :p:103:p, par t {comp label15:::p::p, comp label14:::p::p}}}, space ::260:x}}"
+						"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, space s:::p, par b {comp label8::b:p::p, comp label10::b:p::p}, space s:::p, par b {comp label9::b:p::p, comp label11::b:p::p}, space s:::p, comp label14:::p::p, space s:::p, comp label15:::p::p, space ::212:x}}"
+					} ) {
+						name: "panel_systemInfoPage"
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label1"
+							"text": "本系统由 南京信息工程大学 计算机与软件学院 软件工程专业 20级 Java课程 第11组开发"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 1, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label8"
+							"text": "组长："
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label9"
+							"text": "组员："
+							"font": &Font3 new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label10"
+							"text": "唐思哲  202083290247"
+							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label11"
+							"text": "鞠立阳  202083290549"
+							"font": #Font3
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label14"
+							"text": "周宣宏  202083290423"
+							"font": #Font3
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label15"
+							"text": "李晨    202083290232"
+							"font": #Font3
+						} )
+					}, new FormLayoutConstraints( null ) {
+						"title": "系统相关"
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 2
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 900, 600 )
+		} )
+	}
+}
