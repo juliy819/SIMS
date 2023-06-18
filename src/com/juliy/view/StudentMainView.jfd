@@ -598,7 +598,7 @@ new FormModel {
 						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
 						add( new FormComponent( "javax.swing.JLabel" ) {
 							name: "label1"
-							"text": "本系统由 南京信息工程大学 计算机与软件学院 软件工程专业 20级 Java课程 第11组开发"
+							"text": "本系统由 xx大学 xx学院 xx专业 xx级 xx开发"
 							"font": new java.awt.Font( "Microsoft YaHei UI", 1, 16 )
 						} )
 						add( new FormComponent( "javax.swing.JLabel" ) {
@@ -613,22 +613,22 @@ new FormModel {
 						} )
 						add( new FormComponent( "javax.swing.JLabel" ) {
 							name: "label10"
-							"text": "唐思哲  202083290247"
+							"text": "xx    xxxxxxxx"
 							"font": new java.awt.Font( "Microsoft YaHei UI", 0, 16 )
 						} )
 						add( new FormComponent( "javax.swing.JLabel" ) {
 							name: "label11"
-							"text": "鞠立阳  202083290549"
+							"text": "xx    xxxxxxxx"
 							"font": #Font3
 						} )
 						add( new FormComponent( "javax.swing.JLabel" ) {
 							name: "label14"
-							"text": "周宣宏  202083290423"
+							"text": "xx    xxxxxxxx"
 							"font": #Font3
 						} )
 						add( new FormComponent( "javax.swing.JLabel" ) {
 							name: "label15"
-							"text": "李晨    202083290232"
+							"text": "xx    xxxxxxxx"
 							"font": #Font3
 						} )
 					}, new FormLayoutConstraints( null ) {
